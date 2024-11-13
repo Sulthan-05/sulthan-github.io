@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:arial, sans-serif;
+}
+
+body{
+    background-color:#f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cv-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    background-color:#ffffff;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar{
+    background-color: #050000d4;
+    color: #ecf0f1;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.profile-poto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom:15px;
+}
+
+.job-title{
+    font-size: 1.2em;
+    color: #ecf0f1;
+    margin-bottom: 15px;
+}
+
+.conten-info p, .social-links{
+    color: #bdc3c7;
+    margin-bottom: 8px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size:1.3em;
+}
+
+.social-links a:hover{
+    color: #232323;
+}
+
+.content{
+    width: 75%;
+    padding: 50px;
+}
+
+h2{
+    color: #06030e;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00000070;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about p{
+    line-height: 1.6;
+    color: rgba(23, 22, 22, 0.895);
+    margin-bottom: 20px;
+    font-size:115%;
+    font-weight: bold;
+}
+
+.job, .education-item{
+    margin-bottom: 15px;
+}
+
+.position{
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 8px;
+}
+
+.skills .skill{
+    margin-bottom: 10px;
+}
+
+.skill-name{
+    font-size: 0.9em;
+    color: #34495e;
+    margin-bottom: 3px;
+}
+
+.skill-bar{
+    background-color: #ecf0f1;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-level{
+    height: 8px;
+    background-color: #0000009e;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .job-title, .contact-info, .social-links {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .contact-info, .social-links {
+        font-size: 14px;
+    }
+
+    .skill-bar {
+        height: 8px;
+    }
+
+    .skill-level {
+        height: 8px;
+    }
+}
